@@ -23,7 +23,7 @@ class ProductListView extends Component {
     }
 
     componentWillUnmount(){
-        Channel.removeListner('product:remove', this.remove);
+        Channel.removeListener('product:remove', this.remove);
     }
 
     async remove(productId){
